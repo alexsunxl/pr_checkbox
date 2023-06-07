@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* flex 居中三件套*/
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    object-fit: contain;
+}
+
+/**
+* chrome remove number input apperance
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
